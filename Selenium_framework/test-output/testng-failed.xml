@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Groups]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test_Groups(failed)">
+    <groups>
+      <run>
+        <include name="Sanity"/>
+        <exclude name="Regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testCases.Inventory_page_2_test">
+        <methods>
+          <include name="verifyProductLable"/>
+          <include name="setUp"/>
+          <include name="CloseBrowser"/>
+        </methods>
+      </class> <!-- testCases.Inventory_page_2_test -->
+    </classes>
+  </test> <!-- Test_Groups(failed) -->
+</suite> <!-- Failed suite [Groups] -->
